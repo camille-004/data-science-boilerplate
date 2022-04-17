@@ -19,7 +19,8 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
 
-  - conda env create --name test_env --file=environment.yml --ignore-builds
+  - sed 's/\(.*[[:alnum:]]\)=[[:alnum:]][[:alnum:].-_]*/\1/' environment.yml > env.yml
+  - conda env create --name test_env --file=env.yml
   - conda activate test_env
   - python setup.py install
 script:
