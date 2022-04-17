@@ -6,7 +6,7 @@ import click
 @click.command()
 @click.argument("input_filepath", type=click.Path(exists=True))
 @click.argument("output_filepath", type=click.Path())
-def main(input_filepath, output_filepath):
+def main(input_filepath: str, output_filepath: str) -> None:
     """
     Run data processing scripts to turn raw (../raw) data into processed data to be saved in ../processed
 
