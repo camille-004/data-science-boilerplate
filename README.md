@@ -1,4 +1,5 @@
 # data-science-boilerplate
+[![Build Status](https://app.travis-ci.com/camille-004/data-science-boilerplate.svg?branch=main)](https://app.travis-ci.com/camille-004/data-science-boilerplate)
 ## Getting Started
 This project assumes you have Anaconda or Miniconda installed on your machine. If you do not, please install from https://docs.conda.io/en/latest/miniconda.html. This is my boilerplate loosely based on [Cookie Cutter Data Science](https://github.com/drivendata/cookiecutter-data-science), with modifications including easier Anaconda support, `isort` seeding, pre-commit configs, and Travis CI.
 1.  `git clone` this repository in the desired directory on your local machine.
