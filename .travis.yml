@@ -19,7 +19,7 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
 
-  - conda env create --name test_env --file=environment.yaml
+  - conda create --name test_env --file=environment.yaml
   - conda activate test_env
   - python setup.py install
 script:
