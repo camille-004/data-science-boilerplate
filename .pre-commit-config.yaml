@@ -33,5 +33,5 @@ repos:
     rev: 5.10.1
     hooks:
       - id: isort
-        args: [ "--multi-line=5", "--line-length=120", "--use-parentheses", "--filter-files" ]
+        args: [ "--multi-line=5", "--line-length=79", "--use-parentheses", "--filter-files" ]
         exclude: "migrations"
