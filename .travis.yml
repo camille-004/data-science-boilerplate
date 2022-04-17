@@ -25,4 +25,4 @@ install:
 script:
   - python -m pytest tests --cov=src --cov-fail-under=0
   - mypy --ignore-missing-imports --disallow-untyped-defs src
-  - flake8 --ignore=E203,E266,E401,E501,W503,F403,F401 --max-line-length=79 src
+  - flake8 --ignore=E203,E266,E401,E501,W503,F403,F401 --max-line-length=120 src
