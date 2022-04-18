@@ -17,4 +17,5 @@ This project assumes you have Anaconda or Miniconda installed on your machine. I
 4. Run `conda env update && conda activate <env_name>`.
 5. Run `pip install -e .`.
 6. Run `pre-commit install`.
-7. **If you to include test coverage in your build:** In `.travis.yml`, uncomment `python -m pytest tests --cov=src --cov-fail-under=0` and change the `--cov-fail-under` value in  to your intended test coverage percentage.
+7. If you want to run CI, change `conda activate boilerplate` to `conda activate <your_env_name>`.
+8. **If you to include test coverage in your build:** In `.travis.yml`, uncomment `python -m pytest tests --cov=src --cov-fail-under=0` and change the `--cov-fail-under` value in  to your intended test coverage percentage.
