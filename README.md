@@ -19,3 +19,17 @@ This project assumes you have Anaconda or Miniconda installed on your machine. I
 6. Run `pre-commit install`.
 7. If you want to run CI, change `conda activate boilerplate` to `conda activate <your_env_name>`.
 8. **If you to include test coverage in your build:** In `.travis.yml`, uncomment `python -m pytest tests --cov=src --cov-fail-under=0` and change the `--cov-fail-under` value in  to your intended test coverage percentage.
+
+## To-Do
+- [ ] Add `config` folder under `src` to keep all the YAML files which can then be used for data validation and settings management via Pydantic.
+- [ ] Under `src`, the models folder will only contain the DL model building code or ML model code, nothing more.
+- [ ] Under `src`, a separate directory for training under which all the training code will reside.
+- [ ] Same for `inference`; a separate directory for inference and other supporting code which is always required in CV or NLP tasks.
+- [ ] Under `src`, create a directory with the name `base` to store all the base classes.
+- [ ] Under `src`, create a directory with the name `logger` to set up:
+    1. Logging module to log code
+    2. Model logging using Tensorboard, MLflow, or any other model logger.
+- [ ] Move the visualization directory  outside of `src` and store all the model logger visualizations and other charts in that folder that way it would be easy to track using DVC.
+- [ ] Rename the `data` folder to `data_blobs`, that way it is clear it is only used for data storage.
+- [ ] Rename the `model` folder to `model_weights`.
+- [ ] Add `docs` folder.
