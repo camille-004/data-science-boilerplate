@@ -16,4 +16,4 @@ dependencies:
   - numpy
   - nbstripout
   - pre-commit-hooks
-  - click
+  - sphinx
