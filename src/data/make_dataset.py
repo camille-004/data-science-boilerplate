@@ -1,6 +1,8 @@
-import logging
-
 import click
+
+import src.logger as logger
+
+log = logger.setup_module_level_logger(__name__, file_name="data.log")  # type: ignore
 
 
 @click.command()
@@ -14,14 +16,10 @@ def main(input_filepath: str, output_filepath: str) -> None:
     :param output_filepath: File path in which to save processed data
     :return:
     """
-    logger = logging.getLogger(__name__)
-    logger.info("Making final dataset from raw data")
+    log.info("Making final dataset from raw data")
 
     # Call data processing functions here
 
 
 if __name__ == "__main__":
-    log_fmt = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-    logging.basicConfig(level=logging.INFO, format=log_fmt)
-
     main()
