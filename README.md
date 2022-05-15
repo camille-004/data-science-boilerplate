@@ -9,7 +9,7 @@ This project assumes you have Anaconda or Miniconda installed on your machine. I
     conda create -n <env_name> dep1 dep2 ...
     conda env export --no-builds --from-history | grep -v "prefix" > environment.yml
     ```
-    These in the `export` command flags add only explicit dependencies to `environment.yml` and prevent cross-platform build issues with dependencies during CI.
+    These `export` command flags add only explicit dependencies to `environment.yml` and prevent cross-platform build issues with dependencies during CI.
     If you would like to use the pre-made `environment.yml` in this project, create an environment as follows:
     ```
     conda env create -f environment.yml
